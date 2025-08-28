@@ -1,0 +1,63 @@
+    /* Define estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 6;
+  padding: 8;
+  text-align: center;
+}
+
+/* Estilo do título */
+h1 {
+  color: #eba104;
+  position: absolute;
+  top: 15px;
+  left:10px;
+}
+h2 {
+    color:rgb(0, 0, 0);
+    position: absolute ;
+    top: 800px;
+    left:10px;
+}
+h3 {
+    color:rgb(53, 64, 68);
+    position: absolute ;
+    text-align: center ;
+    top:700px;
+  
+
+}
+
+/* Estilo do botão */
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;       
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 80px;
+  position: absolute;
+  left: 10px;
+}
+
+/* Animação ao passar o mouse */
+button:hover {
+  background-color: #3700b3;
+}
+
+img {
+  margin-top: 20px;
+  position: absolute;
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+}
+
+.voltar-home {
+  display: inline-block;
+  margin-top: 90px; /* ajuste o valor como quiser */
+}
