@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="cliente.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area do cliente</title>
+  <style>
+    body {
+      background: #fdd03d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .form-container {
+      background: rgba(60, 0, 120, 0.95);
+      max-width: 400px;
+      margin: 40px auto 0 auto;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px #0002;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 8px;
+      margin-bottom: 18px;
+      border: none;
+      border-bottom: 2px solid #b39ddb;
+      background: transparent;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus {
+      border-bottom: 2px solid #fff;
+    }
+    .checkbox-group {
+      margin-bottom: 18px;
+    }
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 16px;
+      font-size: 0.98rem;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: #6200ea;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    .submit-btn:hover {
+      background: #3700b3;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Area do Cliente</h1>
+  <div class="form-container">
+    <h2>Dados para Entrega</h2>
+    <form>
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" name="cpf" maxlength="14" required placeholder="000.000.000-00">
+
+      <label for="endereco">Endereço para entrega</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="notificacoes" style="accent-color:#6200ea;">
+          Receber notificações
+        </label>
+        <label>
+          <input type="checkbox" name="carteira" style="accent-color:#6200ea;">
+          Ativar carteira digital
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Salvar</button>
+    </form>
+  </div>
+  <a href="/index.html">Voltar para Home</a>
+   <a href="../TelaInicialComponent/TelaInicial.html">Ir para Tela Inicial</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

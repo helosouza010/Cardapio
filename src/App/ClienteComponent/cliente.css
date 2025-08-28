@@ -1,0 +1,13 @@
+
+/* Estilo do botão */
+button {
+  background-color: #6200ea;
+    border: none;
+
+ 
+}
+
+/* Animação ao passar o mouse */
+button:hover {
+  background-color: #3700b3;
+}

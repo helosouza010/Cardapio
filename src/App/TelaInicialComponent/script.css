@@ -1,7 +1,7 @@
     /* Define estilo geral do corpo da página */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #f3ddff;
   margin: 6;
   padding: 8;
   text-align: center;
@@ -40,8 +40,9 @@ button {
   cursor: pointer;
   transition: 0.3s;
   margin-top: 80px;
-  position: absolute;
   left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* Animação ao passar o mouse */
