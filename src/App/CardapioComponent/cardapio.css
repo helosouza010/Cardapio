@@ -1,7 +1,11 @@
     /* Define estilo geral do corpo da página */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-image: url('../../assets/fundocardapio.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 6;
   padding: 8;
   text-align: center;
@@ -12,7 +16,7 @@ body {
 
 /* Estilo do botão */
 button {
-  background-color: #6200ea;
+  background-color: #eba104;
     border: none;
 
  
@@ -20,6 +24,6 @@ button {
 
 /* Animação ao passar o mouse */
 button:hover {
-  background-color: #3700b3;
+  background-color: #eba104;
 }
 
