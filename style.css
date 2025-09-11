@@ -1,7 +1,7 @@
     /* Define estilo geral do corpo da página */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #1c1f1d;
   margin: 6;
   padding: 8;
   text-align: center;
@@ -9,7 +9,7 @@ body {
 
 /* Estilo do título */
 h1 {
-  color: #eba104;
+  color: #ffffff;
   position: absolute;
   top: 15px;
   left:10px;
@@ -18,7 +18,7 @@ h1 {
 
 /* Estilo do botão */
 button {
-  background-color: #6200ea;
+  background-color: #eba104;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -36,3 +36,9 @@ button:hover {
   background-color: #3700b3;
 }
 
+img{
+  position:absolute;
+  right: 10px;
+  top: 10px;    
+
+}

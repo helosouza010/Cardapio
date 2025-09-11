@@ -1,58 +1,119 @@
-    /* Define estilo geral do corpo da página */
+/* ===== Estilo geral do corpo da página ===== */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f3ddff;
-  margin: 6;
-  padding: 8;
+  background-image: url('../../assets/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 6px;   /* corrigido */
+  padding: 8px;  /* corrigido */
   text-align: center;
 }
 
-/* Estilo do título */
-h1 {
-  color: #eba104;
-  position: absolute;
-  top: 15px;
-  left:10px;
+/* ===== Popup ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 9999;
 }
-h2 {
-    color:rgb(0, 0, 0);
-    position: absolute ;
-    top: 800px;
-    left:10px;
+
+.popup {
+  background: #ffffff;
+  padding: 30px 20px; /*vertica e horizontal*/
+  border-radius: 20px;
+  max-width: 320px;
+  width: 80%; /* define que o elemento ocupa 80% do seu container*/
+  max-height: 90vh; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);}
+
+.popup img {
+  top: 10px;
+  max-width: 90%; /*largura maxima queum elemento pode ter*/
+  max-height: 50vh; /* limita a altura da imagem a 50% da altura da viewport */
+  height: auto; /*autura maxima necessaria para acomodar seu conteudo*/
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: contain;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 50px;
+  color: #000000;
+  font-size: 24px;
+}
+
+.popup p {
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+
+/* Botão de fechar (X) */
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* ===== Tela normal (igual ao CSS original) ===== */
+h1 {
+  color: #ffffff;
+  position: absolute;
+  top: 210px;
+  left: 137px;
 }
 h3 {
-    color:rgb(53, 64, 68);
-    position: absolute ;
-    text-align: center ;
-    top:700px;
-  
-
+  color: #ffffff;
+  position: absolute;
+  top: 700px;
+  width: 100%;
+  text-align: center;
 }
 
-/* Estilo do botão */
+a {
+  color: #ffffff;
+  position: absolute;
+  top: 350px;
+}
+
 button {
-  background-color: #6200ea;
+  background-color: #eba104;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 14px 37px;
   font-size: 16px;
-  border-radius: 8px;       
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 80px;
-  left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  position: relative;
+  right: 100px;
+  margin-top: 150px;
+  margin-bottom: 8px;
+  margin-right: 70px;
 }
 
-/* Animação ao passar o mouse */
 button:hover {
   background-color: #3700b3;
 }
 
 img {
   margin-top: 20px;
-  position: absolute;
   border-radius: 15px;
   width: 300px;
   height: auto;
@@ -60,5 +121,6 @@ img {
 
 .voltar-home {
   display: inline-block;
-  margin-top: 90px; /* ajuste o valor como quiser */
+  margin-top: 90px;
+  color: #ffffff;
 }
